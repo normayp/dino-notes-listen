@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIALIZE ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FOR ICON -->
+    <link rel="icon" href="img/logo.png">
+    <!-- WEBSITE TITLE -->
+    <title>Dino Notes │ Listen</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar-fixed">
+        <nav>         
+            <div class="nav-wrapper">
+                <a href="#" class="nav brand-logo center">
+                    <img src="img/logo.png" class="logo responsive-img">
+                    <span class="logo-text"><span class="change-text">D</span>INO <span>N</span>OTE<span>S</span> & <span class="change-text">L</span>ISTE<span>N</span></span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- =========================================== -->
+
+    <!-- BODY CONTAIN -->
+    <div class="container">
+        <div class="row-list row">
+            <div class="col s12 l6">
+                <div class="todo-card card-panel">
+                    <div class="task-input">
+                        <!-- TO DO LIST -->
+                        <h5 class="todo-text">TO DO LIST:</h5>
+                    </div>
+                        <div class="row valign-wrapper">
+                            <div class="todolist-input input-field col s9" style="border: 0.06rem solid #757575;">
+                                <input type="text" name="todo-task" id="task-text" placeholder="📝 Enter Task" class="black-text">
+                            </div>
+                            <div class="col s2">
+                                <a id="add-task"class="btnAdd btn-floating white-text" ><i class="material-icons">add</i></a>
+                            </div>
+                        </div>
+                        <div class="row valign-wrapper">
+                            <div class="col s12">
+                                <label class="selectAll">
+                                  <input type="checkbox" id="selectCb" class="filled-in"/>
+                                  <span style="font-size: 1.2rem;">SELECT ALL</span>
+                                </label>
+                            </div>
+                            <div class="deleteAll1 col s9">     
+                                <a class="deleteAll btn">DELETE ALL</a>
+                            </div>
+                        </div>  
+                        <ul id="todo-list"></ul>
+                </div>
+            </div>  
+            
+            <!-- MUSIC PLAYLIST -->
+            <div class="col s12 l6">
+                <div class="music-card card-panel">
+                    <h5 class="music-title">DINO<span> PLAYLIST:</span></h5>
+
+                    <!-- MUSIC 1 -->
+                    <div class="row">
+                        <div class="col s12 m4 center-align hide-on-med-and-up">
+                            <img src="img/music.jpg" id="img11" class="music-pic responsive-img" width="120" height="120">
+                        </div>
+                    </div>
+                    <div class="music row valign-wrapper">
+                        <div class="col s6 m4 l6 hide-on-small-only">
+                            <img src="img/music.jpg" id="img1" class="music-pic responsive-img" width="150" height="150">
+                        </div>
+                        <div class="col s12 m9 l12">
+                            <p></p>
+                            <span class="music-text">Lucid Dream - aespa</span>
+                            <div style="padding: 0px; margin: 0px;"><input type="range" id="progress" min="0" value="0" step="1"></div>
+                            <div class="row-music row valign-wrapper">
+                                <div class="col s1 center-align">
+                                    <a class="btnMusic btn-floating" id="previous-btn1">
+                                        <i class="material-icons">skip_previous</i>
+                                    </a>
+                                </div>
+                                <div class="col s1 center-align">
+                                    <a class="btnMusic btn-floating" id="music-btn1">
+                                        <i class="material-icons">play_arrow</i>
+                                    </a>
+                                </div>
+                                <div class="col s1 center-align">
+                                    <a class="btnMusic btn-floating" id="next-btn1">
+                                        <i class="material-icons">skip_next</i>
+                                    </a>
+                                </div>
+                                <div class="col s2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =========================================== -->
+
+                    <!-- MUSIC 2 -->
+                    <div class="row">
+                        <div class="col s12 m4 center-align hide-on-med-and-up">
+                            <img src="img/music2.jpg" id="img22" class="music-pic responsive-img" width="120" height="120">
+                        </div>
+                    </div>
+                    <div class="music row valign-wrapper">
+                        <div class="col s6 m4 l6 hide-on-small-only">
+                            <img src="img/music2.jpg" id="img2" class="music-pic responsive-img" width="150" height="150">
+                        </div>
+                        <div class="col s12 m9 l12">
+                            <p></p>
+                            <span class="music-text">Daylight - Taylor Swift</span>
+                            <div style="padding: 0px; margin: 0px;"><input type="range" id="progress2" value="0"></div>
+                            <div class="row-music row valign-wrapper">
+                                <div class="btnM col s1 center-align">
+                                    <a class="btnMusic btn-floating" id="previous-btn2">
+                                        <i class="material-icons">skip_previous</i>
+                                    </a>
+                                </div>
+                                <div class="btnM col s1 center-align">
+                                    <a class="btnMusic btn-floating" id="music-btn2">
+                                        <i class="material-icons">play_arrow</i>
+                                    </a>
+                                </div>
+                                <div class="btnM col s1 center-align">
+                                    <a class="btnMusic btn-floating" id="next-btn2">
+                                        <i class="material-icons">skip_next</i>
+                                    </a>
+                                </div>
+                                <div class="col s2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =========================================== -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+
+    <!-- SHOW DINO POP_UP -->
+    <div class="pop-up container">
+        <div class="row">
+            <div class="col s12 l12">
+                <div class="pop-up-card card-panel">
+                    <div class="row-dino row">
+                        <div class="col s12 l4 center-align">
+                            <img src="img/happy.png" class="pop-up-img responsive-img">
+                        </div>
+                        <div class="col s12 l8">
+                            <h4 class="dino-say"><span>Welcome</span> to <span class="dino">DINO</span> <span class="dino-change">NOTES</span> <span>&</span> <span class="dino-change">LISTEN</span> <span class="red-text">!</span> Your <span class="dino-change">ultimate companion</span> for staying <span class="dino-change">organized</span> and <span class="dino-change">productive</span>. Let's <span class="dino-change">roar</span> <span>together</span> with <span class="dino-change">efficiency</span> and <span class="dino-change">organization</span>.</h4>
+                        </div>
+                    </div>
+                    <div class="btnOk1 center">
+                        <a class="btnOk btn">OKAY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a id="btnShowDino" class="showDino btn-floating btn-large pulse">
+          <i id="btnShowDino" class="material-icons">info</i>
+        </a>
+    </div>
+    <!-- =========================================== -->
+
+    <!-- DESIGN PICS -->
+    <img src="img/dinosaur.png" id="imgDesign" class="designPic">
+    <img src="img/space.png" id="imgDesign" class="designPic2">
+    <!-- =========================================== -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-text center-align"><span>S</span>AY <span>T</span>HANK<span>S</span> TO <span>DINO</span> ! ヅ  <br><span>M</span>A<span>D</span>E <span>B</span>Y: <span>NAMI</span></div>  
+    </div>
+    <!-- =========================================== -->
+
+    <!-- SCRIPT -->
+    <script src="main.js"></script>
+    <!-- =========================================== -->
+</body>
+</html>

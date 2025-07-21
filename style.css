@@ -1,0 +1,315 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Madimi+One&display=swap');
+/*  =================================================================== */
+
+/* BODY CONTAIN */
+body {
+    background-color: #84E4A8;
+}
+.card-panel {
+    border: 8px #e75480 double;
+    border-radius: 10px;;
+}
+.row-list {
+    padding-top: 50px;
+}
+/*  =================================================================== */
+
+/* NAVBAR */
+nav {
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    border-bottom: 5px solid #110d27;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+.logo {
+    width: 70px; 
+    height: auto;
+    margin-right: 10px; 
+    vertical-align: middle;
+}
+.logo-text {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 900;  
+    vertical-align: middle;
+    letter-spacing: 3px;
+    color: black;
+}
+span {
+    color: #f27f0c;
+}
+/*  =================================================================== */
+
+/* TO DO LIST */
+.todo-text {
+    font-family: "Madimi One", sans-serif;
+    color: #f27f0c;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.selectAll {
+    font-family: "Madimi One", sans-serif;
+    color: #f27f0c;
+    font-weight: 600;
+}
+.input-field.col.s9 input[type=text]:focus {
+    border-color: #e75480; 
+    box-shadow: none;
+}
+.todo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+}
+.todo-card::before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), 
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px); 
+    background-size: 10px 10px;
+    border-radius: inherit;
+    pointer-events: none;
+}
+.btnAdd {
+    background-color: #2E7D32;
+}
+.btnAdd:hover {
+    background-color: #f27f0c;
+}
+.remove {
+    color: black;
+}
+.delete:hover {
+    color: white;
+    background-color: red;
+    border-radius: 10%;
+}
+.deleteAll {
+    background-color: #2E7D32;
+    border-radius: 5px;
+}
+.deleteAll1 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 200;
+}
+.deleteAll:hover {
+    color: white;
+    background-color: red;
+}
+/*  =================================================================== */
+
+/* MUSIC */
+.music-title {
+    font-family: "Madimi One", sans-serif;
+    color: #84E4A8;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.music-card {
+    background-color: #2a254b;
+}
+.music {
+    background-color: #9e9e9e ;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.music-icon {
+    cursor: pointer;
+}
+.music-pic {
+    border-radius: 50%;
+    border: 5px #2E7D32 solid;
+}
+.music-text {
+    color: #2E7D32;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Madimi One", sans-serif;
+}
+.btnMusic {
+    background-color: #f27f0c;
+}
+.btnMusic:hover {
+    background-color: #2E7D32;
+}
+input[type="range"] {
+    /* -webkit-appearance: none; */
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    /* -webkit-appearance: none; */
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #2a254b;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: transparent;
+}
+.rotate {
+    animation: spin 10s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.paused {
+    animation-play-state: paused;
+}
+/*  =================================================================== */
+
+/* SHOW DINO SECTION */
+.showDino {
+    background-color: #2E7D32;
+}
+.showDino:hover {
+    background-color: #f27f0c;
+}
+.pop-up-img {
+    width: 350px; 
+    height: auto;
+    vertical-align: middle;
+}
+.dino-say {
+    vertical-align: middle;
+    font-weight: 650;
+    padding: 25px;
+    font-family: "Architects Daughter", cursive;
+}
+.dino-change {
+    color:#2E7D32;
+    font-family: "Madimi One", sans-serif;
+}
+.dino {
+    font-family: "Madimi One", sans-serif;
+}
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease; 
+}
+.pop-up-card { 
+    padding: 70px 70px;
+}
+.btnOk {
+    background-color: #f27f0c;
+    border-radius: 5px;
+}
+.btnOk1 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 200;
+}
+.btnOk:hover {
+    color: white;
+    background-color: red;
+}
+/*  =================================================================== */
+
+/* DESIGN PIC */
+.designPic {
+    width: 100px;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.designPic2 {
+    width: 100px;
+    position: absolute;
+    top: 60%;
+    left: 4%;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+/*  =================================================================== */
+
+/* FOOTER */
+.footer-text {
+    padding: 5px;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 900;  
+    vertical-align: middle;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 1.3rem;
+}
+/*  =================================================================== */
+/* SCROLL */
+::-webkit-scrollbar { /*WIDTH*/
+    width: 5px;
+}
+::-webkit-scrollbar-track { /*TRACK*/
+    box-shadow: inset 0 0 5px transparent; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #2E7D32;  /*HANDLE*/
+}
+/*  =================================================================== */
+
+@media screen  and (max-width: 1000px){
+    .designPic {
+        display: none;
+    }
+    .designPic2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .row-music {
+        padding-right: 10px;
+    }
+    .dino-say {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .pop-up-card { 
+        padding: 20px 0px;
+    }
+    .pop-up-img {
+        width: 100px;
+    }
+    .logo-text {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+}
+@media screen  and (max-width: 650px){
+    .logo {
+        display: none;
+    }
+}
+@media screen  and (max-width: 400px){
+    nav {
+        padding: 0;
+    }
+}
